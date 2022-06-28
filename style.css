@@ -1,0 +1,132 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    background-color: aquamarine;
+    font-family:'Oswald', sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+.flex-wrapper{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.add-todo-wrapper{
+    display: flex;
+    width: 500px;
+    min-height: 40px;
+    align-items:center;
+    background-color:rgb(255, 0, 221);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.input-wrapper{
+    width: 80%;
+}
+
+.input-wrapper input{
+    width: 95%;
+    height: 25px;
+}
+
+.button-wrapper button{
+width: 100%;
+background-color:#fffb00;
+color: rgb(247, 8, 195);
+outline: none;
+border: none;
+height: 25px;
+cursor:pointer;
+border-radius:3px;
+}
+
+.todo-item{
+    display: flex;
+    width: 500px;
+    min-height: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color:blueviolet;
+}
+.todo-item.checked{
+    background-color: darkolivegreen;
+    opacity: 0.5;
+}
+
+.todo-item.deletion {
+    animation: opacity 1s ease-in-out;
+}
+.description {
+    width: 75%;
+    height: 10px;
+    background-color: aliceblue;
+    padding: 10px;
+    }
+
+.button {
+        
+        font-family:'Oswald', sans-serif;
+        text-rendering: auto;
+        color: rgb(253, 253, 253);
+        display: inline-block;
+        text-align: center;
+        align-items: flex-start;
+        cursor: pointer; 
+        box-sizing: border-box;
+        background-color:  violet;
+        margin: 0em;
+        padding: 1px 1px;
+        border-width: 6px;
+        border-style: outset;
+        border-color: pink;
+        border-image: initial;
+    }
+
+    
+
+    .buttons{
+        width: 20%;
+        display: flex;
+        align-items:center;
+        color: floralwhite;
+    }
+    
+
+    .buttons input{
+        cursor: pointer;
+    }
+
+    .buttons button {
+        outline: none;
+        border: none;
+        background-color: rgba(240, 225, 21, 0.836);
+        color:rgb(255, 255, 255);
+        cursor: pointer;
+        height: 29px;
+        border-radius:3px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    @keyframes opacity{
+        from{
+            opacity: 1;
+        } to {
+            opacity: 0;
+        }
+    }
